@@ -1,0 +1,34 @@
+body {
+  background-color: black;
+}
+
+.main {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.ecg {
+  flex: 2;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.spo2,
+.hr {
+  height: 13.5rem;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
