@@ -4,23 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title></title>
+    <title>cardiosync</title>
   </head>
   <body>
+    <header>
+      <h1>cardiosync.</h1>
+    </header>
     <div class="main">
-      <iframe
-        class="ecg"
-        src="https://industrial.ubidots.com/app/dashboards/public/widget/Zp3SEHrR6bO41xWtLnnqvWVLP_Jrx_edNdX9kKFhk7o?embed=true"
-      ></iframe>
-      <div class="container">
-        <iframe
-          class="spo2"
-          src="https://industrial.ubidots.com/app/dashboards/public/widget/Z9LTjhW2JlC2zcxsAX1oUgMcKLgtjgFaQ89BmJunB6Y?embed=true"
-        ></iframe>
-        <iframe
-          class="hr"
-          src="https://industrial.ubidots.com/app/dashboards/public/widget/GD_xpGa_89Gag4JAKqitXmZO2-OPKieQQgxQFfZGaNk?embed=true"
-        ></iframe>
+      <div class="left">
+        <div class="frame">
+          <h2>ecg.</h2>
+          <iframe
+            class="ecg"
+            src="https://industrial.ubidots.com/app/dashboards/public/widget/Zp3SEHrR6bO41xWtLnnqvWVLP_Jrx_edNdX9kKFhk7o?embed=true"
+          ></iframe>
+        </div>
+      </div>
+      <div class="right">
+        <div class="frame">
+          <h2>SpO<sub>2</sub>.</h2>
+          <iframe
+            class="spo2"
+            src="https://industrial.ubidots.com/app/dashboards/public/widget/Z9LTjhW2JlC2zcxsAX1oUgMcKLgtjgFaQ89BmJunB6Y?embed=true"
+          ></iframe>
+        </div>
+        <div class="frame">
+          <h2>heart rate.</h2>
+          <iframe
+            class="hr"
+            src="https://industrial.ubidots.com/app/dashboards/public/widget/GD_xpGa_89Gag4JAKqitXmZO2-OPKieQQgxQFfZGaNk?embed=true"
+          ></iframe>
+        </div>
       </div>
     </div>
   </body>
